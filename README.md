@@ -1,5 +1,7 @@
 # recycle-rm
 
+![Introducing rm. "But rm already exists?" "Exactly. And today, we're reinventing it."](AI_Generated_Meme_For_project.png)
+
 The project is named **recycle-rm**; the installed command stays **`rm`** (a drop-in replacement).
 
 > **"Introducing `rm`."**
