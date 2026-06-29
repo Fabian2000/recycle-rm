@@ -1,12 +1,10 @@
 # recycle-rm
 
-> The project is named **recycle-rm**; the installed command stays **`rm`** (a drop-in replacement).
+The project is named **recycle-rm**; the installed command stays **`rm`** (a drop-in replacement).
 
-![Introducing rm; "But rm already exists?" "Exactly. And today, we're reinventing it."](docs/keynote.png)
-
-> *"Introducing `rm`."*
-> *"But `rm` already exists?"*
-> *"Exactly. And today, we're reinventing it."*
+> **"Introducing `rm`."**
+> **"But `rm` already exists?"**
+> **"Exactly. And today, we're reinventing it."**
 
 A **safe, drop-in replacement for `rm`**: the command-line interface is 1:1
 compatible with GNU coreutils `rm` (every flag, exit code and error message;
