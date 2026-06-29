@@ -1,0 +1,21 @@
+[package]
+name = "recycle-rm"
+version = "1.0.0"
+edition = "2024"
+description = "A safe, drop-in rm: command-line compatible with GNU rm, but removed files go to a recoverable trash. Independent clean-room implementation."
+license = "GPL-3.0-or-later"
+repository = "https://github.com/Fabian2000/recycle-rm"
+
+# The package is named recycle-rm, but the installed executable must be `rm`.
+[[bin]]
+name = "rm"
+path = "src/main.rs"
+
+[dependencies]
+# SQLite, statically compiled in (no system libsqlite3 dependency).
+rusqlite = { version = "0.32", features = ["bundled"] }
+# Time-ordered UUIDv7 names for trashed entries.
+uuid = { version = "1", features = ["v7"] }
+# Archiving + zstd compression for `--trash compress` / restore decompression.
+tar = "0.4"
+zstd = "0.13"
